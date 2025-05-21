@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self'; frame-src https://www.youtube.com/embed/gmSWw0_3S1k https://youtu.be/4e9u_bLPNCQ\n https://formsubmit.co https://docs.google.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self'; frame-src https://www.youtube.com https://formsubmit.co https://docs.google.com">
     <title>Shadow Collective | $SEE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,6 +17,7 @@
         <div class="menu-logo">
             <img src="images/logo.png" alt="Shadow Collective Logo" class="logo-img">
             <div class="social-icons">
+                <!-- Social Media Links -->
                 <a href="https://x.com/ShdwCol" target="_blank" class="social-icon">
                     <i class="fab fa-twitter"></i>
                 </a>
@@ -50,12 +51,8 @@
                 <span>Buy Token</span>
             </a>
             <a href="#" class="menu-item" data-section="collective" onclick="showSection(this)">
-                <i class="fas fa-users-cog"></i>
+                <i class="fas fa-layer-group"></i>
                 <span>Collective</span>
-            </a>
-            <a href="#" class="menu-item" data-section="dao" onclick="showSection(this)">
-                <i class="fas fa-landmark"></i>
-                <span>DAO</span>
             </a>
             <a href="#" class="menu-item" data-section="newsletter" onclick="showSection(this)">
                 <i class="fas fa-envelope"></i>
@@ -191,7 +188,7 @@
                     <h3>Contract Address</h3>
                     <p class="contract-address">2EFHwn9PdcXgxvXEkeffR3fZf2sBzngBNAfQN3Ef4Kgc</p>
                     <div class="buy-button-container">
-                        <a href="https://raydium.io/swap/?inputMint=2EFHwn9PdcXgxvXEkeffR3fZf2sBzngBNAfQN3Ef4Kgc&outputMint=sol" target="_blank" class="buy-button">Buy Now</a>
+                        <a href="https://raydium.io/swap/?inputMint=2EFHwn9PdcXgxvXEkeffR3fZf2sBzngBNAfQN3Ef4Kgc&outputMint=sol" class="buy-button">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -199,53 +196,32 @@
                 <img src="images/buy-image.jpg" alt="Buy Shadow Collective Token">
             </div>
         </section>
-
+        
+        <!-- Added Collective Section -->
         <section id="collective" class="section">
             <div class="header-container">
                 <h1 class="section-header shadow-text">COLLECTIVE</h1>
-                <h2 class="sub-header" style="color: #00ff00; text-align: center; margin-top: -20px; margin-bottom: 20px; font-size: 1.8em; font-weight: bold; text-transform: uppercase;">ACT NOW</h2>
+                <div class="token-name">ACT NOW</div>
             </div>
             <div class="content-container">
+                <h2>COMMAND CENTER</h2>
                 <p>This is your command center for taking action, spreading the word about our mission, verifying your $SEE token holdings for greater privileges, and rising through the ranks of the Collective.</p>
                 
-                <div class="buy-button-container" style="margin-top: 30px; margin-bottom: 30px;">
-                     <a href="https://kazm.com/s/membership/d017eadd-9da3-4951-ae3d-8f566f070977" class="buy-button" style="padding: 15px 30px; font-size: 1.2em;">Join Now</a>
+                <div class="buy-button-container" style="margin: 30px auto;">
+                    <a href="https://kazm.com/s/membership/d017eadd-9da3-4951-ae3d-8f566f070977" class="buy-button">Join Now</a>
                 </div>
-
-                <p style="text-align: center; margin-bottom: 20px;">See the vision, join the movement:</p>
-                <div class="video-container" style="margin-top: 20px; margin-bottom: 20px;">
-                     <iframe 
-                        src="https://youtu.be/4e9u_bLPNCQ\n" 
-                        title="Collective Action Video" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                     </iframe>
-                </div>
-                 <p>Engage with tasks, earn recognition, and amplify our collective voice. The power of The Unseen is in your hands.</p>
             </div>
-        </section>
-
-        <section id="dao" class="section">
-            <div class="header-container">
-                <h1 class="section-header shadow-text">DAO</h1>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/4e9u_bLPNCQ" 
+                    title="Shadow Collective Command Center" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
-            <div class="content-container">
-                <h2>THE FUTURE IS DECENTRALIZED</h2>
-                <p>The Shadow Collective DAO (Decentralized Autonomous Organization) is the cornerstone of our commitment to true community ownership. It empowers $SEE token holders to collectively steer the direction, manage resources, and shape the future of our movement against institutional capture.</p>
-                
-                <h3>Key Functions of the DAO:</h3>
-                <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li style="margin-bottom: 10px;"><strong>Governance & Voting:</strong> $SEE token holders propose and vote on crucial initiatives, including treasury management, strategic partnerships, and project development. Your token is your voice.</li>
-                    <li style="margin-bottom: 10px;"><strong>Treasury Control:</strong> A portion of $SEE tokens and any generated profits are held in a community treasury, controlled by the DAO. Decisions on allocating these funds for collective investments or community rewards are made through transparent voting.</li>
-                    <li style="margin-bottom: 10px;"><strong>Collective Action:</strong> The DAO will coordinate community efforts beyond financial investments, such as awareness campaigns, support for aligned projects, and advocacy for retail investor rights.</li>
-                    <li style="margin-bottom: 10px;"><strong>Ecosystem Growth:</strong> Propose and fund initiatives that enhance the $SEE ecosystem, develop new utilities for the token, or support community-led projects that align with our mission.</li>
-                </ul>
-                <p>We are dedicated to building a robust, transparent, and accessible DAO platform. This ensures that every member of The Unseen can actively participate in our shared goal of reclaiming financial power.</p>
-                
-                <div class="buy-button-container" style="margin-top: 30px;">
-                     <a href="#" class="buy-button" style="padding: 15px 30px; font-size: 1.2em; background-color: #555; cursor: not-allowed;">Coming Soon</a>
-                </div>
+            <div class="section-image">
+                <img src="images/collective-image.jpg" alt="Shadow Collective Command Center">
             </div>
         </section>
         
@@ -272,11 +248,11 @@
             </div>
         </section>
         
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Shadow Collective | $SEE | We are The Unseen
+        </footer>
     </main>
-
-    <footer>
-        © 2025 Shadow Collective | $SEE | We are The Unseen
-    </footer>
 
     <script src="script.js"></script>
 </body>
